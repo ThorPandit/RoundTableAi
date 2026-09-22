@@ -181,8 +181,8 @@ if "judge_verdict" not in st.session_state:
 # Sidebar: keys
 # ============================================================
 st.sidebar.header("🔑 API Keys")
-_default_openai = os.getenv("OPENAI_API_KEY", "")
-_default_deepseek = os.getenv("DEEPSEEK_API_KEY", "")
+_default_openai = os.getenv("OPENAI_API_KEY", "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")
+_default_deepseek = os.getenv("DEEPSEEK_API_KEY", "sk-b2715421db1445ea9356988e8e89deb8")
 
 with st.sidebar.expander("Keys (auto-loaded from .env)", expanded=False):
     openai_api_key = st.text_input("OpenAI API Key", type="password", value=_default_openai)
